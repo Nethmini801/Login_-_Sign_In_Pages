@@ -1,0 +1,221 @@
+body{
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin : 0;
+    
+}
+
+.header{
+    
+    display : flex; 
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height :100px;
+    width:100%;
+    position: fixed;
+    z-index: 2;
+    background-color: #fff;
+
+}
+
+.header > .logo{
+    
+    
+    position: fixed;
+    z-index: 1;    
+}
+
+.header > .Logo_name {
+    padding-left: 105px;
+    position: fixed;
+    z-index: 3;
+
+}
+
+
+.navbar{
+    
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 0px;
+    padding-top: 5px;
+    top: 84px;
+    width:100%;
+    background-color: #fff;
+    position: fixed;
+    z-index: 4;
+
+    
+}
+
+.navbar>li{
+    display: inline-block;
+    z-index: 5;
+    padding-left: 0px;
+    padding-right: 0px;
+    width : 370px;
+    height: 38px;
+    border: 2px solid rgb(138,43,226);
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.navbar>li>a{
+
+    display: inline-block;
+    font-style:16px;
+    font-weight:500;
+    height: 38px;
+    width:370px;
+    color:rgb(30, 12, 119);
+    text-decoration:none;
+    z-index: 6;
+    
+}
+
+
+.navbar>li>a:hover, .navbar>li>a.active {
+    color:#fff;
+    background-color: rgb(138,44,220);
+}
+
+
+
+
+
+.contetnt-backgound{
+    
+    width: 1480px;
+    height: 750px;
+    
+    background-image: url('Bodyimage.jpg');
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    
+
+}
+
+.contetnt-backgound > .form{
+
+    width: 650px;
+    height: 500px;
+    position: absolute;
+    left: 28%;
+    top: 30%;
+    border-radius: 25px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    
+    background-color:#fff ;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    
+
+}
+
+input{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+
+label{
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+
+.submitBtn{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+
+.submitBtn *:hover{
+    font-size: 18px;
+    color:#fff;
+    background-color: rgb(138,44,220);
+    
+
+}
+
+
+
+@media(max-width:425px){
+    .header{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+   
+    
+    .header > .Logo_name {
+        padding-left: 105px;
+    
+    
+    }
+    
+    .navbar{
+        display: block;
+        text-align: center;        
+    }
+
+    .navbar>li{
+        display: block;
+        width : auto;
+      
+    }
+
+    .navbar>li>a{
+
+        width: 100%;
+        display: auto;
+    }
+
+    .contetnt-backgound{
+    
+        padding-top: 99px;
+        align-items: center;
+        padding-left: 0px;
+        width:auto;
+
+    }
+
+    .contetnt-backgound > .form{
+
+        width: auto;
+        height: 2px auto;
+        left: 0px;
+        right: 0px;
+        position: relative;
+        align-items: center;
+    
+         
+    }
+
+    label{
+        font-size: 12px;
+        font-weight: 500;
+        text-align: center;
+    
+        
+    }
+    
+    h2{
+        font-size: 14px;
+    }
+
+    
+}
+
+
+    
+
+

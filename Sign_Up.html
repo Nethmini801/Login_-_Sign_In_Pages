@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign_Up</title>
+<meta name ="viewport" content="width=device-width, initial-scale=1">
+<link href="Stylesheet.css" rel="stylesheet" />
+<style>
+    body{
+        background-image: url(/SignUp_background.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 800px;
+        
+    }
+    form{
+
+    width: 650px ;
+    height: 730px;
+    top : 200px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+    border-radius: 25px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    
+    
+    }
+
+    .row-1,.row-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+    }
+    .row-2,.row-4,.row-5,.row-6,.row-7{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    }
+
+    
+    .row-2>input ,.row-6>input , .row-7>input{
+        margin-left:27px;
+        width : 50%;
+       
+    }
+
+
+    label{
+        font-size: 16px;
+    }
+    input{
+         border-radius: 10px;
+         height: 20px;
+    }
+
+    .btn>button{
+        width:150px ; 
+        height :50px ;
+        border-radius: 15px; 
+        margin-left :auto; 
+        margin-right: auto;
+        display:block 
+    }
+
+    .btn *:hover{
+    font-size: 18px;
+    width:150px ; 
+    border-radius: 15px;
+    height :50px ;
+    color:#fff;
+    background-color: rgb(138,44,220);
+    
+
+}
+
+@media (max-width:425px) {
+form{
+width:auto;
+height: auto;
+position: relative;
+align-items: center;
+border-radius: 0px;
+
+}
+
+form>.form-content{
+padding: 5px 10px;
+
+}
+
+.row-1,.row-3{
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+column-gap: 12px;
+padding-left: 5px;
+padding-right: 5px;
+
+}
+
+.row-2,.row-4,.row-5,.row-6,.row-7{
+width: auto;
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+padding-left: 10px;
+padding-right: 10px;
+
+
+
+}
+
+
+.row-2>input ,.row-6>input , .row-7>input{
+    margin-left:17px;
+    width : 50%;
+   
+}
+
+
+label{
+    font-size: 12px;
+}
+input{
+     border-radius: 5px;
+     height: 18px;
+     display: block;
+}
+
+.btn>button{
+    width:125px ; 
+    height :25px ;
+    border-radius: 10px; 
+    margin-left :auto; 
+    margin-right: auto;
+    display:block 
+}
+
+.btn *:hover{
+font-size: 16px;
+width:125px ; 
+border-radius: 15px;
+height :25px ;
+
+
+}
+    
+}
+   
+</style> 
+</head>
+<body >
+    <div class="header">
+        <div class="logo">
+            <img src="LOGO.png" alt="Logo">
+        </div>
+        <div class="Logo_name">
+            <h1>FASHION STAR</h1>
+        </div>  
+         
+    </div>
+
+<table class="nav" boarder="1">
+    <thead>
+        <ul class="navbar">
+            <li>
+                <a href="a" >Home</a>
+            </li>
+            <li>
+                <a href="Login_Page.html">Login</a>
+            </li>
+            <li>
+                <a href="a">About us</a>
+            </li>
+            <li>
+                <a href="a">Contact us</a>
+            </li>
+        </ul>
+    </thead>
+</table>    
+
+    
+    <form method="post" style="text-align: center; background-color: bisque;">
+            <br>
+        <h2 style="color: blueviolet; font-size: 45px;";>Sign Up</h2>
+        <br>
+        <div class="form-content">
+            <div class="row-1">
+                <div class="col-1-row-1">
+                    <label>First Name :</label>
+                    <input type="text" id="fname" name="fname"/>
+                </div>
+                <div class="col-2-row-1">
+                    <label>UserName :</label>
+                    <input type="text" id="user" name="user"/>
+                </div>
+            </div> 
+            <br><br>
+            <div class="row-2">
+                <label> Email id :</label>
+                <input type="email" id="email" name="email"/>
+            </div>
+            <br><br>
+            <div class="row-3">
+                <div class="col-1-row-3">
+                    <label>Gender :</label>
+                    <input type="radio" id="Male" value="M" name="Gender"/>
+                    <label for="male">Male</label>
+                    <input type="radio" id="Female" value="F" name="Gender"/>
+                    <label for="Female">Female</label>
+                </div>
+                <div class="col-2-row-3" style="padding-top: 5px;">
+                   <label> Select the Country :</label> 
+                    <select id="Country" name="country">
+                        <option value="Sri Lanka">Sri Lanka</option>
+                        <option value="Canada">Canada</option>
+                        <option value="India">India</option>
+                        <option value="Australia">Austarlia</option>
+                    </select>
+                    
+                </div>
+            </div>
+            <br><br>
+            <div class="row-4">
+                <label>Newsletter preference :</label>
+                <input type="radio" id="yes" value="y" name="preference"/>
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" value="n" name="preference"/>
+                <label for="no">No</label>
+
+            </div>
+            <br><br>
+            <div class="row-5">
+                <label>Like to see alot :</label>
+                <input type="checkbox" id="kids" value="kids" name="kids"/>
+                <label for="kids">Kids wear</label>
+
+                <input type="checkbox" id="Ladies" value="ladies" name="ladies"/>
+                <label for="ladies">Ladies wear</label>
+
+                <input type="checkbox" id="gents" value="gents" name="gents"/>
+                <label for="gents">Gents wear</label>
+            </div>
+            <br><br>
+            <div class="row-6">
+                <label>Enter a new Password :</label>
+                <input type="password" id="password-new" name="password-new" required/>
+            </div>
+            <br><br>
+            <div class="row-7">
+                <label>Reneter the Password :</label>
+                <input type="password" id="password-confirm" name="password-confirm" required/>
+            </div>
+        </div>
+        <br><br>
+        <div class="btn">
+            <button  type="submit">SUMBIT</button>
+        </div>
+        <br>
+        </form>
+        <br><br>
+    
+</body>
+
+
+</html>
